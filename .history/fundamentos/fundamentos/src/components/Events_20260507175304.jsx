@@ -14,7 +14,7 @@ export const Events = () => {
       return <h1>Renderizando outra coisa!</h1>;
     }
   };
-  return 10 > 2 && <p>Carregando...</p>
+  return 10 > 2 &&
 
   return (
     <div>

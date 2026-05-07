@@ -7,14 +7,11 @@ export const Events = () => {
 
   //! Função de renderização
 
-  const renderSomething = (x) => {
-    if (x) {
-      return <h1>Renderizando isso!</h1>;
-    } else {
-      return <h1>Renderizando outra coisa!</h1>;
+  const renderSomething = (x) =>{
+    if(x){
+      return
     }
-  };
-  return 10 > 2 && <p>Carregando...</p>
+  }
 
   return (
     <div>
@@ -24,10 +21,10 @@ export const Events = () => {
         </button>
       </div>
       <div>
-        <button onClick={handleClick}>Evento com função</button>
+        <button onClick={handleClick}>
+          Evento com função
+        </button>
       </div>
-      {renderSomething(true)}
-      {renderSomething(false)}
     </div>
   );
 };
