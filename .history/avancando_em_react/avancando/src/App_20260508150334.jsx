@@ -4,30 +4,19 @@ import "./App.css";
 
 import Data from "./components/Data";
 
-//! ListRender
-
-import ListRender from "./components/ListRender";
-
-//! ConditionalRender
-import ConditionalRender from "./components/ConditionalRender";
 //! Imagem em assets
 
 import night from "./assets/city.jpg";
 
 function App() {
   return (
-    <div className="App" style={{ paddingBottom: "500px" }}>
+    <div className="App">
       <h1>Avançando em React</h1>
       {/* Imagem em public */}
       <img src="/img1.jpg" alt="Alguma imagem" />
       {/* Imagem em assets */}
       <img src={night} alt="Outra imagem" />
-      {/* useState */}
-      <Data />
-      {/* ListRender */}
-      <ListRender />
-      {/* ConditionalRender */}
-      <ConditionalRender />
+      {/* use */}
     </div>
   );
 }
