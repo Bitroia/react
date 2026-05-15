@@ -1,0 +1,16 @@
+import React from "react";
+
+const Fragments = () => {
+  return (
+    <>
+      
+      <div><h2>Temos 2 elementos pai</h2></div>
+      <div></div>
+      <h2>Esse também é</h2>
+      <div></div>
+      <div></div>
+    </>
+  );
+};
+
+export default Fragments;
