@@ -3,13 +3,11 @@ import "./MyForm.css";
 
 import { useState } from "react";
 
-const MyForm = ({ userName, userEmail, userBio, userRole }) => {
+const MyForm = ({userName, userEmail}) => {
   //! Gerenciamento de dados
 
   const [name, setName] = useState(userName);
   const [email, setEmail] = useState(userEmail);
-  const [bio, setBio] = useState(userBio);
-  const [role, setRole] = useState(userRole);
 
   const handleName = (e) => {
     setName(e.target.value);
@@ -18,15 +16,9 @@ const MyForm = ({ userName, userEmail, userBio, userRole }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(name, email);
+  }; 
 
-    //! Limpar o form
-    setName("");
-    setEmail("");
-    setBio("");
-    setRole("")
-  };
 
-  console.log(name, email, bio, role);
 
   return (
     <div>
@@ -57,29 +49,6 @@ const MyForm = ({ userName, userEmail, userBio, userRole }) => {
             //! Controlled input
             value={email}
           />
-        </label>
-        {/* textarea */}
-        <label>
-          <span>Bio:</span>
-          <textarea
-            name="bio"
-            placeholder="Descrição do usuário"
-            onChange={(e) => setBio(e.target.value)}
-            value={bio}
-          ></textarea>
-        </label>
-        {/* Select */}
-        <label>
-          <span>Função no sistema</span>
-          <select
-            name="role"
-            onChange={(e) => setRole(e.target.value)}
-            value={role}
-          >
-            <option value="user">Usuário</option>
-            <option value="editor">Editor</option>
-            <option value="admin">Admin</option>
-          </select>
         </label>
       </form>
     </div>

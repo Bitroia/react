@@ -3,13 +3,13 @@ import "./MyForm.css";
 
 import { useState } from "react";
 
-const MyForm = ({ userName, userEmail, userBio, userRole }) => {
+const MyForm = ({ userName, userEmail, userBio, userRole}) => {
   //! Gerenciamento de dados
 
   const [name, setName] = useState(userName);
   const [email, setEmail] = useState(userEmail);
-  const [bio, setBio] = useState(userBio);
-  const [role, setRole] = useState(userRole);
+  const [bio, setBio] = useState(userBio)
+  const [role, setRole] = useState(userRole)
 
   const handleName = (e) => {
     setName(e.target.value);
@@ -22,11 +22,10 @@ const MyForm = ({ userName, userEmail, userBio, userRole }) => {
     //! Limpar o form
     setName("");
     setEmail("");
-    setBio("");
-    setRole("")
+    setBio("")
   };
 
-  console.log(name, email, bio, role);
+  console.log(name, email, bio);
 
   return (
     <div>
@@ -71,14 +70,10 @@ const MyForm = ({ userName, userEmail, userBio, userRole }) => {
         {/* Select */}
         <label>
           <span>Função no sistema</span>
-          <select
-            name="role"
-            onChange={(e) => setRole(e.target.value)}
-            value={role}
-          >
+          <select name="role">
             <option value="user">Usuário</option>
-            <option value="editor">Editor</option>
-            <option value="admin">Admin</option>
+            <option value="editor">Usuário</option>
+            <option value="admin">Usuário</option>
           </select>
         </label>
       </form>

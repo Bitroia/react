@@ -23,7 +23,7 @@ const MyForm = ({ userName, userEmail, userBio, userRole }) => {
     setName("");
     setEmail("");
     setBio("");
-    setRole("")
+    setRole
   };
 
   console.log(name, email, bio, role);

@@ -23,10 +23,9 @@ const MyForm = ({ userName, userEmail, userBio, userRole }) => {
     setName("");
     setEmail("");
     setBio("");
-    setRole("")
   };
 
-  console.log(name, email, bio, role);
+  console.log(name, email, bio);
 
   return (
     <div>
