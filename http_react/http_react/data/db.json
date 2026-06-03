@@ -1,0 +1,60 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Camisa",
+      "price": 59.9
+    },
+    {
+      "id": "2",
+      "name": "Calça vermelha",
+      "price": 90
+    },
+    {
+      "id": "3",
+      "name": "Boné aba reta",
+      "price": 29.9
+    },
+    {
+      "name": "calcinha",
+      "price": "10",
+      "id": "ytDYF2Aao1I"
+    },
+    {
+      "name": "testando 2",
+      "price": "25",
+      "id": "ENxSFrcmcqo"
+    },
+    {
+      "name": "testando 2",
+      "price": "25",
+      "id": "parZ1P4EH8c"
+    },
+    {
+      "name": "testando 2",
+      "price": "25",
+      "id": "_ZPFHR5lp-k"
+    },
+    {
+      "name": "bfcdbdcb",
+      "price": "54",
+      "id": "0K65bOLbSbk"
+    },
+    {
+      "name": "bfcdbdcb",
+      "price": "54",
+      "id": "369pDmA2uaU"
+    },
+    {
+      "name": "bfcdbdcb",
+      "price": "54",
+      "id": "IwTqJRHVYE8"
+    },
+    {
+      "name": "bfcdbdcb",
+      "price": "54",
+      "id": "d13qJwgUwj0"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

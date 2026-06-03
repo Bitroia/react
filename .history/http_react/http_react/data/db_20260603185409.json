@@ -1,0 +1,27 @@
+{
+  "products": [
+          "id": "1",
+      "name": "Camisa",
+      "price": 59.9
+    },
+    {
+      "id": "2",
+      "name": "Calça vermelha",
+      "price": 90
+    },
+    {
+      "id": "3",
+      "name": "Boné aba reta",
+      "price": 29.9
+    },
+    {
+      "name": "teste",
+      "price": "22",
+      "id": "8GE6m0EP9aM"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+29.9
+    }
+  ]
+}
