@@ -54,6 +54,36 @@
       "name": "bfcdbdcb",
       "price": "54",
       "id": "d13qJwgUwj0"
+    },
+    {
+      "name": "teste post",
+      "price": "10",
+      "id": "EtTg7-XupdE"
+    },
+    {
+      "name": "teste post",
+      "price": "10",
+      "id": "MSVRTPmZpME"
+    },
+    {
+      "name": "teste loading",
+      "price": "100",
+      "id": "zRPBcRnm2Js"
+    },
+    {
+      "name": "testando loading dnv",
+      "price": "50",
+      "id": "uVzecx7S5yo"
+    },
+    {
+      "name": "testando loading dnv",
+      "price": "50",
+      "id": "cD6B56SLJNM"
+    },
+    {
+      "name": "testando loading dnv",
+      "price": "50",
+      "id": "YDXxfxXu1_Y"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
