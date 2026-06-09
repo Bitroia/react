@@ -61,8 +61,6 @@ export const useFetch = (url) => {
 
         const res = await fetch(url, config);
         json = await res.json();
-
-        setLoading(false);
       }
 
       setCallFetch(json);

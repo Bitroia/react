@@ -64,8 +64,7 @@ function App() {
       <h1>HTTP em React</h1>
       {/* Loading */}
       {loading && <p>Carregando...</p>}
-      {/* Tratando erro */}
-      {error && <p>{error}</p>}
+      
       {/* Resgate de dados */}
       <ul>
         {items &&

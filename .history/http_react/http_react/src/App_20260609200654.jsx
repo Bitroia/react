@@ -65,7 +65,7 @@ function App() {
       {/* Loading */}
       {loading && <p>Carregando...</p>}
       {/* Tratando erro */}
-      {error && <p>{error}</p>}
+      {erro &&}
       {/* Resgate de dados */}
       <ul>
         {items &&

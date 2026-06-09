@@ -5,11 +5,12 @@ import { useFetch } from "./hooks/useFetch";
 const url = "http://localhost:3000/products";
 
 function App() {
+
   //! Resgatando dados
   //const [products, setProducts] = useState([]);
   //! custom hook
 
-  const { data: items, httpConfig, loading, error } = useFetch(url);
+  const { data: items, httpConfig, loading } = useFetch(url);
 
   // useEffect(() => {
   //   async function getData() {
@@ -35,7 +36,7 @@ function App() {
       price,
     };
 
-    //! Refatorando
+  //! Refatorando
 
     httpConfig(product, "POST");
 
@@ -64,8 +65,6 @@ function App() {
       <h1>HTTP em React</h1>
       {/* Loading */}
       {loading && <p>Carregando...</p>}
-      {/* Tratando erro */}
-      {error && <p>{error}</p>}
       {/* Resgate de dados */}
       <ul>
         {items &&
@@ -97,14 +96,13 @@ function App() {
           <div className="btns-area">
             {/* <input id="btn-enviar" type="submit" value="Enviar" /> */}
             {/* Loading Post */}
-            {loading && <input type="submit" disabled value="Aguarde" />}
-            {!loading && <input type="submit" value="Criar" />}
-            {/* <input
+            {loading && <input type="submit" disabled value={}/>}
+            <input
               id="btn-limpar"
               type="button"
               value="Limpar"
               onClick={clearText}
-            /> */}
+            />
           </div>
         </form>
       </div>

@@ -41,12 +41,13 @@ export const useFetch = (url) => {
         const res = await fetch(url);
         const json = await res.json();
 
+        setLoading(false);
+
         setData(json);
       } catch (error) {
         console.log(error.message);
-        setError("Houve algum erro ao carregar os dados!");
+        setError(""Houve algum erro ao)
       }
-      setLoading(false);
     };
     fetchData();
   }, [url, callFetch]);
@@ -70,5 +71,5 @@ export const useFetch = (url) => {
     httpRequest();
   }, [config, method, url]);
 
-  return { data, httpConfig, loading, error };
+  return { data, httpConfig, loading };
 };

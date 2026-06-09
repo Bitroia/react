@@ -84,6 +84,31 @@
       "name": "testando loading dnv",
       "price": "50",
       "id": "YDXxfxXu1_Y"
+    },
+    {
+      "name": "input teste",
+      "price": "23",
+      "id": "aADJOc2iUK8"
+    },
+    {
+      "name": "input teste",
+      "price": "23",
+      "id": "3T_muqLTaZE"
+    },
+    {
+      "name": "teste 2",
+      "price": "56",
+      "id": "5-cOfJKmHuk"
+    },
+    {
+      "name": "sdad",
+      "price": "dada",
+      "id": "jBMtHwnm074"
+    },
+    {
+      "name": "sdad",
+      "price": "dada",
+      "id": "Ct4DLCUcT6s"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

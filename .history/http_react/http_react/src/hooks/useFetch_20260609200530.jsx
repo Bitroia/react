@@ -33,20 +33,23 @@ export const useFetch = (url) => {
 
   useEffect(() => {
     const fetchData = async () => {
-      //! Tratando erros
+
+      //! Tratando erros 
       try {
-        //! Loading
-        setLoading(true);
+        
+      //! Loading
+      setLoading(true);
 
-        const res = await fetch(url);
-        const json = await res.json();
+      const res = await fetch(url);
+      const json = await res.json();
 
-        setData(json);
-      } catch (error) {
-        console.log(error.message);
-        setError("Houve algum erro ao carregar os dados!");
-      }
       setLoading(false);
+
+      setData(json);
+        
+      } catch (error) {
+        console.log(error.message)
+      }
     };
     fetchData();
   }, [url, callFetch]);
@@ -70,5 +73,5 @@ export const useFetch = (url) => {
     httpRequest();
   }, [config, method, url]);
 
-  return { data, httpConfig, loading, error };
+  return { data, httpConfig, loading };
 };

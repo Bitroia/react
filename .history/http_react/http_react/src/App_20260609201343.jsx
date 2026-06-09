@@ -2,7 +2,7 @@ import "./App.css";
 import { useState, useEffect } from "react";
 import { useFetch } from "./hooks/useFetch";
 
-const url = "http://localhost:3000/products";
+const url = "setLoading(false);";
 
 function App() {
   //! Resgatando dados
