@@ -10,11 +10,8 @@ import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
 import Contact from "./routes/Contact.jsx";
 //! Rota dinâmica
 import Product from "./routes/Product.jsx";
-//! Nested route
 import Info from "./routes/Info.jsx";
 
-//! Search params
-import Search from "./routes/Search.jsx";
 
 const router = createBrowserRouter([
   {
@@ -43,9 +40,9 @@ const router = createBrowserRouter([
       },
       //! Search
       {
-        path: "search",
-        element: <Search />,
-      },
+        path:"",
+        element
+      } 
     ],
   },
 ]);

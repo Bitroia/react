@@ -3,7 +3,6 @@ import "./App.css";
 import { Outlet } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Product from "./routes/Product";
-import SearchForm from "./components/SearchForm";
 
 //!Link entre paginas
 

@@ -3,7 +3,6 @@ import "./App.css";
 import { Outlet } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Product from "./routes/Product";
-import SearchForm from "./components/SearchForm";
 
 //!Link entre paginas
 
@@ -13,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <SearchForm />
+      <Sear
       <Outlet />
       <p>Footer</p>
     </div>
