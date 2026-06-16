@@ -8,7 +8,6 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   const { data: items } = UseFetch(url);
-  console.log(items)
   return (
     <div>
       <h1>Home</h1>

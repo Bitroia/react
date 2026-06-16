@@ -8,11 +8,9 @@ import Home from "./routes/Home.jsx";
 //!Configurando Router
 import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
 import Contact from "./routes/Contact.jsx";
+
 //! Rota dinâmica
-import Product from "./routes/Product.jsx";
-import Info from "./routes/Info.jsx";
-
-
+import Product from "./routes/Product.jsx"; 
 const router = createBrowserRouter([
   {
     path: "/",
@@ -30,14 +28,9 @@ const router = createBrowserRouter([
       },
       //! Rota dinâmica
       {
-        path: "products/:id",
-        element: <Product />,
-      },
-      //! Netsted route
-      {
-        path: "products/:id/info",
-        element: <Info />,
-      },
+        path:"products/:id",
+        element:
+      } 
     ],
   },
 ]);

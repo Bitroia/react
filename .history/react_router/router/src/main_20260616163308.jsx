@@ -12,7 +12,6 @@ import Contact from "./routes/Contact.jsx";
 import Product from "./routes/Product.jsx";
 import Info from "./routes/Info.jsx";
 
-
 const router = createBrowserRouter([
   {
     path: "/",
@@ -35,7 +34,7 @@ const router = createBrowserRouter([
       },
       //! Netsted route
       {
-        path: "products/:id/info",
+        path: "products/id:/info",
         element: <Info />,
       },
     ],

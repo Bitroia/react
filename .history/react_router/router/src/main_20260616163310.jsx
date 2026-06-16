@@ -35,7 +35,7 @@ const router = createBrowserRouter([
       },
       //! Netsted route
       {
-        path: "products/:id/info",
+        path: "products/id:/info",
         element: <Info />,
       },
     ],

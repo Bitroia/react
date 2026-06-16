@@ -1,14 +1,13 @@
 import React from "react";
 //! Carregamento de dados
-import { UseFetch } from "../hooks/UseFetch";
+import { useFetch } from "../hooks/UseFetch";
 const url = "http://localhost:3000/products";
 //!   Rota dinâmica
 import { Link } from "react-router-dom";
 
 
 const Home = () => {
-  const { data: items } = UseFetch(url);
-  console.log(items)
+  const { data: items } = useFetch(url);
   return (
     <div>
       <h1>Home</h1>
