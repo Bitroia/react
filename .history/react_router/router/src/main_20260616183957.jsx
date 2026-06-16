@@ -49,7 +49,7 @@ const router = createBrowserRouter([
       //! Redirect
       {
         path:"teste",
-        element: <Navigate to="/"/>
+        element: <Navigate to={}/>
       } 
     ],
   },

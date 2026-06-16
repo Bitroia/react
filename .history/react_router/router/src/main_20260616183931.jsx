@@ -6,7 +6,7 @@ import ErrorPage from "./routes/ErrorPage.jsx";
 import Home from "./routes/Home.jsx";
 
 //!Configurando Router
-import { createBrowserRouter, RouterProvider, Navigate } from "react-router-dom";
+import { createBrowserRouter, RouterProvider,  } from "react-router-dom";
 import Contact from "./routes/Contact.jsx";
 //! Rota dinâmica
 import Product from "./routes/Product.jsx";
@@ -49,7 +49,7 @@ const router = createBrowserRouter([
       //! Redirect
       {
         path:"teste",
-        element: <Navigate to="/"/>
+        element:
       } 
     ],
   },
