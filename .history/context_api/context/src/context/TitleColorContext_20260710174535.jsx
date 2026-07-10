@@ -1,0 +1,16 @@
+import { Children, createContext, useReducer } from "react";
+
+export const TitleColorContext = createContext();
+
+export const TitleColorReducer = (state, action) => {
+    switch(action.type) {
+        case "RED":
+            return{...state, color: "red"}
+            case "BLUE":
+                return{...state, colo}
+    }
+}
+
+export const TitleColorContextProvider = ({ children }) => {
+  return <TitleColorContext.Provider>{children}</TitleColorContext.Provider>;
+};

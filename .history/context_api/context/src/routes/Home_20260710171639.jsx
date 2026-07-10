@@ -1,0 +1,18 @@
+import React from "react";
+
+//! Alterando o valor do contexto
+import { useContext } from "react";
+import ChangeCounter from "../context/CounterContext" 
+
+const Home = () => {
+  const {counter} = useContext(ChangeCounter)
+
+  return (
+    <div>
+      <h1>Home</h1>
+      <p></p>
+    </div>
+  );
+};
+
+export default Home;
