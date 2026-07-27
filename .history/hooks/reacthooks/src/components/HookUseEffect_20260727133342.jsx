@@ -19,34 +19,16 @@ const HookUseEffect = () => {
     console.log("Serei executado apenas uma vez");
   }, []);
 
-
   //! Array de dependencias com valores
-
-  const [anotherNumber, setAnotherNumber] = useState(0);
   useEffect(() => {
-    if (anotherNumber > 0) {
-      console.log("Sou executado apenas quando muda o anotherNumber");
-    }
-  }, [anotherNumber]);
 
-  //! Cleanup do useEffect
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      console.log("Hello World");
-      setAnotherNumber(anotherNumber + 1);
-    }, 2000);
-    return () => clearTimeout(timer);
-  }, [anotherNumber]);
+  }, [anoter])
 
   return (
     <div>
       <h2>useEffect</h2>
       <p>Número: {number}</p>
       <button onClick={changeSomething}>Executar</button>
-      <p>Another Number:{anotherNumber}</p>
-      <button onClick={() => setAnotherNumber(anotherNumber + 1)}>
-        Mudar o another
-      </button>
     </div>
   );
 };

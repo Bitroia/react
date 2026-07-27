@@ -9,7 +9,7 @@ import {
   Navigate,
 } from "react-router-dom";
 import Contact from "./routes/Contact.jsx";
-
+import { HookUseContext } from "./hooks/HookUseContext.jsx";
 
 //! Contexto mais complexo
 import { TitleColorContextProvider } from "./context/TitleColorContext.jsx";

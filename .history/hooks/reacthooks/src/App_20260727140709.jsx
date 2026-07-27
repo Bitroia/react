@@ -1,6 +1,6 @@
 import './App.css'
 import { Link, Outlet } from 'react-router-dom'
-
+import { HookUseContext } from './components/HookUseContext'
 
 function App() {
   return(

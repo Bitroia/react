@@ -14,8 +14,6 @@ const Home = () => {
       <HookUseReducer />
       <HookUseEffect />
       <h2>useContext</h2>
-      <p>Valor do contexto: {contextValue}</p>
-      <hr />
     </div>
   );
 };

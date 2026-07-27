@@ -12,7 +12,7 @@ import {
   Navigate,
 } from "react-router-dom";
 
-import { HookUseContext } from "./components/HookUseContext.jsx";
+import { HookUseContext } from "./hooks/HookUseContext.jsx";
 
 const router = createBrowserRouter([
   {

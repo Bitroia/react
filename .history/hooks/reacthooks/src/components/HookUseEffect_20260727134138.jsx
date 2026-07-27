@@ -19,7 +19,6 @@ const HookUseEffect = () => {
     console.log("Serei executado apenas uma vez");
   }, []);
 
-
   //! Array de dependencias com valores
 
   const [anotherNumber, setAnotherNumber] = useState(0);
@@ -35,7 +34,7 @@ const HookUseEffect = () => {
       console.log("Hello World");
       setAnotherNumber(anotherNumber + 1);
     }, 2000);
-    return () => clearTimeout(timer);
+    return() => clear
   }, [anotherNumber]);
 
   return (
