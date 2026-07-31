@@ -25,7 +25,7 @@ const Home = () => {
       <HookUseCallback />
       <HookUseMemo/>
       <HookUseLayoutEffect/>
-      <HookUseImperativeHandle/>
+      <HookUseImperativeHandle
     </div>
   );
 };
